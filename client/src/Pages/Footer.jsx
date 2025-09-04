@@ -81,7 +81,7 @@ export default function Footer() {
             <h2 className="font-semibold mb-5 text-green-400">Get in touch</h2>
             <div className="text-sm space-y-2 text-white">
               <p>+918110976021</p>
-              <p>loanguru2025@gmail.com</p>
+              <p>akbar@loanguru4u.com</p>
               <p className="break-words">
                 LOKESH TOWER Old Door No.110/2, then Door No.18, Now New Door
                 No.37, Kodambakkam High road, Nungambakkam, Chennai - 600 034,
