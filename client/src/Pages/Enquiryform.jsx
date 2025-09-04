@@ -22,7 +22,7 @@ export default function WhatsAppForm({ onClose }) {
       Message: ${form.message}
     `;
     const encodedMessage = encodeURIComponent(whatsappMessage);
-    const whatsappURL = `https://wa.me/+918110976021?text=${encodedMessage}`;
+const whatsappURL = `https://wa.me/919566673272?text=${encodedMessage}`;
     window.open(whatsappURL, "_blank");
     onClose();
   };

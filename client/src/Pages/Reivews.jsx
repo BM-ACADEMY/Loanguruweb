@@ -114,7 +114,7 @@ const cardsData = [
   };
 
   return (
-    <section className="py-16 bg-gradient-to-tl from-slate-950 via-slate-900 to-violet-950">
+    <section className="py-16 bg-gradient-to-tr from-slate-950 via-slate-900 to-violet-950">
       <div className="container mx-auto px-4">
         <motion.div
             initial={{ y: -20 }}
@@ -135,7 +135,7 @@ const cardsData = [
                         100% { transform: translateX(-50%); }
                     }
                     .marquee-inner {
-                        animation: marqueeScroll 30s linear infinite;
+                        animation: marqueeScroll 20s linear infinite;
                     }
                     .marquee-reverse {
                         animation-direction: reverse;
@@ -152,18 +152,9 @@ const cardsData = [
             ))}
           </div>
 
-          {/* Right gradient overlay */}
         </div>
 
-        <div className="marquee-row w-full mx-auto overflow-hidden relative mt-2">
-
-          <div className="marquee-inner marquee-reverse flex transform-gpu min-w-[200%] py-8 animate-marquee-reverse">
-            {[...cardsData, ...cardsData].map((card, index) => (
-              <CreateCard key={index} card={card} />
-            ))}
-          </div>
-
-        </div>
+        
       </div>
     </section>
   );

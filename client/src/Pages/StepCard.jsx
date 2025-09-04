@@ -47,7 +47,7 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section className="pb-10 pt-10 relative overflow-hidden bg-gradient-to-bl from-slate-950 via-slate-900 to-violet-950">
+    <section className="pb-10 pt-10 relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-violet-950">
       {/* Decorative blur backgrounds */}
 
       <div className="container mx-auto px-6 relative">

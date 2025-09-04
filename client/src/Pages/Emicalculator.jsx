@@ -67,7 +67,7 @@ const EmiCalculator = () => {
   };
 
   return (
-    <div className="bg-gradient-to-bl from-slate-950 via-slate-900 to-violet-950 min-h-screen flex justify-center items-start p-6 py-12">
+    <div className="bg-gradient-to-br from-slate-950 via-slate-900 to-violet-950 min-h-screen flex justify-center items-start p-6 py-12">
       <div className="bg-white p-10 rounded-3xl shadow-2xl max-w-4xl w-full space-y-8">
         
         {/* Loan Amount */}

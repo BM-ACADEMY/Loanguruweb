@@ -15,7 +15,7 @@ export default function Footer() {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/60 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-black/65 pointer-events-none"></div>
 
       {/* Footer content */}
       <div className="relative z-10 flex flex-col md:flex-row justify-between w-full gap-10 border-b border-white/30 pb-6">
@@ -25,11 +25,11 @@ export default function Footer() {
             <img src={Logo} alt="logo" className="w-20 object-contain" />
           </div>
           <p className="mt-6 text-sm text-white">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+            We simplify loan applications with expert, bank-ready documentation
+            for PMEGP, MUDRA, MSME, and Business Loans. Trusted for
+            transparency, integrity, and results.
           </p>
+
           <div className="mt-2 flex space-x-4">
             <a
               href="https://www.facebook.com/share/1a6WLYmDTD/"
@@ -61,10 +61,15 @@ export default function Footer() {
               <li>
                 <a href="#about">About</a>
               </li>
+              <li>
+                <a href="#services">Services</a>
+              </li>
             </ul>
           </div>
           <div>
-            <h2 className="font-semibold mb-5 text-green-400">Working Hours:</h2>
+            <h2 className="font-semibold mb-5 text-green-400">
+              Working Hours:
+            </h2>
             <p className="text-white">
               Monday - Saturday: 10:00 AM - 7:00 PM
               <br />

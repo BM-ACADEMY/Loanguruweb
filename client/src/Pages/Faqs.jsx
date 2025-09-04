@@ -36,7 +36,7 @@ const FAQAccordion = () => {
   };
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-tl from-slate-950 via-slate-900 to-violet-950">
+    <section className="relative overflow-hidden bg-gradient-to-tr from-slate-950 via-slate-900 to-violet-950">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <h2
           className="text-3xl sm:text-4xl font-extrabold text-center mb-8 text-white"
