@@ -87,6 +87,7 @@ export default function Footer() {
                 No.37, Kodambakkam High road, Nungambakkam, Chennai - 600 034,
                 Tamilnadu, India
               </p>
+              
             </div>
           </div>
         </div>
