@@ -24,7 +24,7 @@ export default function EnquiryForm({ onClose }) {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:5000/send-email", form);
+      const res = await axios.post("https://loanguruweb.onrender.com/send-email", form);
       toast.success(res.data.message);
       setForm({ name: "", phone: "", email: "", address: "", message: "" });
     } catch (err) {
