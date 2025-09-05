@@ -9,6 +9,7 @@ import Footer from './Pages/Footer'
 import EmiCalculator from './Pages/Emicalculator'
 import WhatsappFloatButton from './Pages/WhatsappFloatButton'
 import Reviews from './Pages/Reivews'
+import Drivebutton from './Pages/drivebutton'
 
 // Simple loader component
 const Loader = () => {
@@ -43,6 +44,7 @@ const App = () => {
       <StepCard />
       <FAQAccordion />
       <EmiCalculator />
+      <Drivebutton/>
       <Reviews />
       <WhatsappFloatButton />
       <Footer />

@@ -114,7 +114,7 @@ const cardsData = [
   };
 
   return (
-    <section className="py-16 bg-gradient-to-tr from-slate-950 via-slate-900 to-violet-950">
+    <section className="py-16 bg-gradient-to-br from-slate-950 via-slate-900 to-violet-950">
       <div className="container mx-auto px-4">
         <motion.div
             initial={{ y: -20 }}
