@@ -80,12 +80,11 @@ export default function Footer() {
           <div className="max-w-sm md:max-w-xs lg:max-w-md leading-relaxed">
             <h2 className="font-semibold mb-5 text-green-400">Get in touch</h2>
             <div className="text-sm space-y-2 text-white">
-              <p>+918110976021</p>
+              <p>+91 74184 55463</p>
               <p>info@loanguru4u.com</p>
               <p className="break-words">
-                LOKESH TOWER Old Door No.110/2, then Door No.18, Now New Door
-                No.37, Kodambakkam High road, Nungambakkam, Chennai - 600 034,
-                Tamilnadu, India
+                5th Floor Modern Tower Door No.23, West Cott Road,
+                Royapettah, Chennai - 600014, Tamil Nadu, India
               </p>
               
             </div>

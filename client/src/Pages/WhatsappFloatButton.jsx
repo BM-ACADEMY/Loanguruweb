@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import whatsappIcon from "../assets/img/whatsapp.png";
 
 const WhatsappFloatButton = () => {
-  const phoneNumber = "+918110976021";
+  const phoneNumber = "+917418455463";
   const message = encodeURIComponent("Hi, I’m interested in your services!");
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
 
