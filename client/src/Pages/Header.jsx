@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Mail, Phone, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useNavigate, useLocation } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import Logo from "../assets/img/logo.png";
 
 const Header = () => {
@@ -79,9 +79,20 @@ const Header = () => {
       <nav className={`w-full transition-all duration-300 bg-white shadow-lg py-3`}>
         <div className="px-4 md:px-8 lg:px-16 flex items-center">
           <div className="flex items-center space-x-4 justify-start">
-            <div>
+            <Link
+              to="/"
+              state={{ scrollTo: "#home" }}
+              aria-label="Go to homepage"
+              onClick={() => {
+                setActiveLink("Home");
+                setIsOffcanvasOpen(false);
+                if (location.pathname === "/") {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }
+              }}
+            >
               <img src={Logo} alt="logo" className="w-20 mx-auto object-contain" />
-            </div>
+            </Link>
           </div>
 
           <div className="flex items-center space-x-8 ml-auto">

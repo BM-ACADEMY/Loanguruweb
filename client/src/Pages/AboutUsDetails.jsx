@@ -64,7 +64,7 @@ const AboutUsDetails = () => {
   }, []);
 
   return (
-    <main id="about-details" className="overflow-x-hidden">
+    <main id="about-details" className="overflow-x-clip">
       {/* Page banner */}
       <section className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-violet-950 pt-40 pb-20 md:pt-44 md:pb-24">
         <div
