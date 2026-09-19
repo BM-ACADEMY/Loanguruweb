@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import Header from './Pages/Header'
 import Home from './Pages/Home'
 import About from './Pages/About'
+import AboutUsDetails from './Pages/AboutUsDetails'
+import PolicyPage from './Pages/PolicyPage'
+import { privacyPolicy, termsConditions, refundPolicy } from './data/policies'
 import Services from './Pages/Services'
 import StepCard from './Pages/StepCard'
 import FAQAccordion from './Pages/Faqs'
@@ -38,15 +42,37 @@ const App = () => {
   return (
     <div>
       <Header />
-      <Home />
-      <About />
-      <Services />
-      <StepCard />
-      <FAQAccordion />
-      <EmiCalculator />
-      <Drivebutton/>
-      <Reviews />
-      <WhatsappFloatButton />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Home />
+              <About />
+              <Services />
+              <StepCard />
+              <FAQAccordion />
+              <EmiCalculator />
+              <Drivebutton />
+              <Reviews />
+              <WhatsappFloatButton />
+            </>
+          }
+        />
+        <Route path="/about-us" element={<AboutUsDetails />} />
+        <Route
+          path="/privacy-policy"
+          element={<PolicyPage policy={privacyPolicy} />}
+        />
+        <Route
+          path="/terms-and-conditions"
+          element={<PolicyPage policy={termsConditions} />}
+        />
+        <Route
+          path="/refund-cancellation-policy"
+          element={<PolicyPage policy={refundPolicy} />}
+        />
+      </Routes>
       <Footer />
     </div>
   )

@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import HeroVideoDialog from "@/components/magicui/hero-video-dialog";
@@ -66,15 +67,13 @@ const About = () => {
             </p>
 
             {/* CTAs */}
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSc8haoOxC0iM-4by9KDP65jwzFfRj-1DKh70Rt2xbbQjmq1CA/viewform"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/about-us"
               className="mt-4 relative overflow-hidden w-40 h-12 px-4 bg-[#25975e6e] text-white border-2 border-white rounded-md text-lg font-bold cursor-pointer group flex items-center justify-center"
             >
               {/* Main text with icon */}
               <span className="relative z-10 flex items-center justify-center gap-2 transition-colors duration-300 group-hover:text-white">
-                Contact
+                Read More
                 <svg
                   aria-hidden="true"
                   className="h-5 w-5 transform transition-transform duration-300 group-hover:translate-x-1"
@@ -94,7 +93,7 @@ const About = () => {
               <span className="absolute w-48 h-48 -top-20 -left-4 bg-green-200 rounded-full transform scale-0 group-hover:scale-100 transition-transform group-hover:duration-500 duration-1000"></span>
               <span className="absolute w-48 h-48 -top-20 -left-4 bg-green-400 rounded-full transform scale-0 group-hover:scale-100 transition-transform group-hover:duration-700 duration-700"></span>
               <span className="absolute w-48 h-48 -top-20 -left-4 bg-green-600 rounded-full transform scale-0 group-hover:scale-100 transition-transform group-hover:duration-1000 duration-500"></span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

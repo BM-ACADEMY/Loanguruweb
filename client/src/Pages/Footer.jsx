@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../assets/img/logo.png";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import FooterBg from "../assets/img/footerimage.jpeg"; // Your light bg image
@@ -51,18 +52,53 @@ export default function Footer() {
         </div>
 
         {/* Links & Contact */}
-        <div className="flex-1 flex flex-col md:flex-row items-start md:justify-end gap-20">
+        <div className="flex-1 flex flex-col md:flex-row items-start md:justify-end gap-10 lg:gap-14">
           <div>
             <h2 className="font-semibold mb-5 text-green-400">Links</h2>
             <ul className="text-sm space-y-2 text-white">
               <li>
-                <a href="#">Home</a>
+                <Link to="/" state={{ scrollTo: "#home" }}>
+                  Home
+                </Link>
               </li>
               <li>
-                <a href="#about">About</a>
+                <Link to="/" state={{ scrollTo: "#about" }}>
+                  About
+                </Link>
               </li>
               <li>
-                <a href="#services">Services</a>
+                <Link to="/" state={{ scrollTo: "#services" }}>
+                  Services
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 className="font-semibold mb-5 text-green-400">Legal</h2>
+            <ul className="text-sm space-y-2 text-white">
+              <li>
+                <Link
+                  to="/privacy-policy"
+                  className="hover:text-[#07bf69] transition-colors"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/terms-and-conditions"
+                  className="hover:text-[#07bf69] transition-colors"
+                >
+                  Terms &amp; Conditions
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/refund-cancellation-policy"
+                  className="hover:text-[#07bf69] transition-colors"
+                >
+                  Refund &amp; Cancellation Policy
+                </Link>
               </li>
             </ul>
           </div>

@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Mail, Phone, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate, useLocation } from "react-router-dom";
 import Logo from "../assets/img/logo.png";
 
 const Header = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
   const [activeLink, setActiveLink] = useState("Home");
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOffcanvasOpen, setIsOffcanvasOpen] = useState(false);
@@ -55,8 +58,20 @@ const Header = () => {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
       window.history.pushState(null, "", path); // Update URL without reload
+    } else if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: path } });
     }
   };
+
+  useEffect(() => {
+    const target = location.state?.scrollTo;
+    if (location.pathname === "/" && target) {
+      const timer = setTimeout(() => {
+        document.querySelector(target)?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [location]);
 
   return (
     <header className="fixed top-0 left-0 w-full z-50">
